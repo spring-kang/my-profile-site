@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Hero() {
   return (
     <section
@@ -49,14 +47,12 @@ export default function Hero() {
           {/* Profile Image */}
           <div className="fade-in-up flex justify-center md:justify-end">
             <div className="float-animation relative">
-              <div className="profile-border overflow-hidden rounded-3xl bg-gradient-to-br from-green-100 to-emerald-200 shadow-2xl md:h-96 md:w-96 h-80 w-80">
-                <Image
-                  src="/images/kang.webp"
+              <div className="profile-border h-80 w-80 overflow-hidden rounded-3xl bg-gradient-to-br from-green-100 to-emerald-200 shadow-2xl md:h-96 md:w-96">
+                <img
+                  src="/my-profile-site/images/kang.webp"
                   alt="Profile - Bulbasaur"
-                  width={384}
-                  height={384}
                   className="h-full w-full object-cover"
-                  priority
+                  loading="eager"
                 />
               </div>
               {/* Decorative gradient circles */}
